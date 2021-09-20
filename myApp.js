@@ -4,9 +4,9 @@ const mongoose = require('mongoose');
 
 mongoose.connect(process.env.MONGO_URI);
 var schema=mongoose.Schema;
+//let Person;
 
 
-let Person;
 var personSchema=new schema({
   name:{type:String,required:true},
   age:Number,
