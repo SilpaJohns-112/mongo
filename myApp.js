@@ -4,8 +4,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect(process.env.MONGO_URI);
 var schema=mongoose.Schema;
-//let Person;
-
+let Person;
 
 var personSchema=new schema({
   name:{type:String,required:true},
@@ -16,6 +15,7 @@ var personSchema=new schema({
 Person=mongoose.model('Person',personSchema);
 
 let me=new Person({name:"Femimi",age:17,favoriteFoods:["stfgv","ergd","erfgfb"]});
+
 
 
 
